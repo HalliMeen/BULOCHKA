@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення — Тепла Булочка</title>
+</head>
+<body>
+
+<header>
+    <h1>🛒 Оформлення замовлення</h1>
+    <nav>
+        <a href="index.html">Головна</a> |
+        <a href="catalog.html">Каталог</a> |
+        <a href="prices.html">Ціни</a> |
+        <a href="about.html">Про нас</a> |
+        <a href="gallery.html">Галерея</a> |
+        <a href="order.html">Замовлення</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <h2>Замовте свіжу випічку</h2>
+
+    <p>
+        Заповніть форму нижче, щоб вказати товари,
+        які ви хотіли б замовити.
+    </p>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Контактні дані</legend>
+
+            <label for="name">Ваше ім'я:</label><br>
+            <input type="text" id="name" name="name"
+                   placeholder="Введіть ім'я" required>
+            <br><br>
+
+            <label for="phone">Номер телефону:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="+380..." required>
+            <br><br>
+
+            <label for="email">Електронна пошта:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com">
+            <br><br>
+
+            <label for="address">Адреса доставки:</label><br>
+            <input type="text" id="address" name="address"
+                   placeholder="Місто, вулиця, будинок">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Ваше замовлення</legend>
+
+            <label for="product">Оберіть товар:</label><br>
+            <select id="product" name="product" required>
+                <option value="">Оберіть товар</option>
+                <option value="white-bread">Білий хліб — 35 грн</option>
+                <option value="rye-bread">Житній хліб — 40 грн</option>
+                <option value="baguette">Багет — 30 грн</option>
+                <option value="croissant">Круасан — 45 грн</option>
+                <option value="chocolate-croissant">
+                    Круасан із шоколадом — 55 грн
+                </option>
+                <option value="donut">Пончик — 35 грн</option>
+                <option value="cinnamon-roll">
+                    Булочка з корицею — 45 грн
+                </option>
+                <option value="apple-pie">
+                    Яблучний пиріг — 60 грн
+                </option>
+                <option value="cheesecake">Сирник — 65 грн</option>
+                <option value="cookies">Печиво — 25 грн за 100 г</option>
+            </select>
+            <br><br>
+
+            <label for="quantity">Кількість:</label><br>
+            <input type="number" id="quantity" name="quantity"
+                   min="1" max="100" value="1" required>
+            <br><br>
+
+            <label for="date">Бажана дата отримання:</label><br>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <p>Спосіб отримання:</p>
+
+            <input type="radio" id="pickup" name="delivery"
+                   value="pickup" checked>
+            <label for="pickup">Самовивіз</label>
+            <br>
+
+            <input type="radio" id="delivery" name="delivery"
+                   value="delivery">
+            <label for="delivery">Доставка</label>
+            <br><br>
+
+            <p>Спосіб оплати:</p>
+
+            <input type="radio" id="cash" name="payment"
+                   value="cash" checked>
+            <label for="cash">Готівкою</label>
+            <br>
+
+            <input type="radio" id="card" name="payment"
+                   value="card">
+            <label for="card">Карткою</label>
+            <br><br>
+
+            <label for="comment">Коментар до замовлення:</label><br>
+            <textarea id="comment" name="comment"
+                      rows="5" cols="40"
+                      placeholder="Ваші побажання..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="agreement"
+               name="agreement" required>
+        <label for="agreement">
+            Підтверджую правильність введених даних
+        </label>
+
+        <br><br>
+
+        <button type="submit">Надіслати замовлення</button>
+        <button type="reset">Очистити форму</button>
+
+    </form>
+
+    <h2>Як оформити замовлення?</h2>
+    <ol>
+        <li>Оберіть потрібний товар.</li>
+        <li>Вкажіть кількість.</li>
+        <li>Заповніть контактні дані.</li>
+        <li>Оберіть спосіб отримання та оплати.</li>
+        <li>Надішліть форму.</li>
+    </ol>
+
+    <p>
+        Для реального приймання замовлень необхідно підключити
+        серверну обробку форми.
+    </p>
+</main>
+
+<hr>
+
+<footer>
+    <p>© 2026 Тепла Булочка</p>
+    <p>Дякуємо, що обираєте нас!</p>
+</footer>
+
+</body>
+</html>
